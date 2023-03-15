@@ -21,8 +21,10 @@ There are two ways in which you can display the visualisations created using Bok
     
     # run output_notebook to plot inline
     `output_notebook()`
+
 ![output](bokeh_loaded.png)
     
+  
     # Import the relevant libraries
     from bokeh.plotting import figure, show
     from bokeh.layouts import row
