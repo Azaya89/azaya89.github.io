@@ -1,1 +1,3 @@
-Fundamentals of Data Visualisation using Bokeh
+![Bokeh](bokeh.png)
+
+### Fundamentals of Data Visualisation using Bokeh
