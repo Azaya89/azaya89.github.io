@@ -24,7 +24,11 @@ There are two ways in which you can display the visualisations created using Bok
 
 ![output](bokeh_loaded.png)
     
-  
+ **Bar Charts**
+
+You can create vertical or horizontal bar charts with Bokeh as follows:
+
+
     # Import the relevant libraries
     from bokeh.plotting import figure, show
     from bokeh.layouts import row
