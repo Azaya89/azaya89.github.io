@@ -37,8 +37,6 @@ You can create vertical or horizontal bar charts with Bokeh as follows:
     names = ['Mary', 'Peter', 'James', 'Mercy']
     ages = [20, 23, 15, 27]
     
-    # Assign names to x-axis by passing the list as the x-range argument to `figure()`
-
     # plot a vertical bar
     p1 = figure(
         x_range=names,
