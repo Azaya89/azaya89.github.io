@@ -129,3 +129,14 @@ You can also create grouped bar charts if you have two or more sets of categorie
 
 
 ![elections](election_bar_plot.png "Grouped bar chart")
+
+
+In the above plot, `ColumnDataSource` is used to store the data for the election results. The ColumnDataSource (CDS) is the core of most Bokeh plots. It provides the data to the glyphs of your plot. For more information about CDS, see [here](https://docs.bokeh.org/en/latest/docs/user_guide/basic/data.html#ug-basic-data-cds).
+
+
+`dodge()` is a function in Bokeh that shifts the bars horizontally so that they don't overlap. It takes three parameters: the name of the column to dodge, the amount to shift the bar (in this case, -0.25, 0.0, and 0.25), and the range of the x-axis.
+
+
+`legend`, a  property of a Bokeh figure that allows you to add a legend to the plot is used to add and customise the legend of the plot.
+
+Always remember to run `output_notebook()` in order to display your plots inline if you are using jupyter notebook.
