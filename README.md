@@ -72,5 +72,60 @@ You can create vertical or horizontal bar charts with Bokeh as follows:
              sizing_mode = "stretch_width"))
 
 
-![bars](bar.png "Horizontal and vertical bars.") 
+![bars](bar.png "Horizontal and vertical bars.")
 
+You can also create grouped bar charts if you have two or more sets of categories you want to show their amounts.
+
+    #import libraries
+    from bokeh.models import ColumnDataSource
+    from bokeh.transform import dodge
+
+    # sample data
+    parties = ["Conservative", "LibDem", "Labour"]
+    regions = ["East", "West", "North", "South"]
+    votes = {"region": regions,
+            "Conservative": [100, 79, 150, 120],
+            "LibDem": [180, 90, 40, 140],
+            "Labour": [30, 186, 100, 40],}
+
+    # create data source
+    source = ColumnDataSource(data=votes)
+
+    # Plot charts
+    p = figure(title="Election votes by region",
+            x_range=regions,
+            height=300,
+            toolbar_location = None,
+            sizing_mode="stretch_width"
+            )
+    p.vbar(x=dodge("region", -0.25, range=p.x_range),
+        top="Conservative",
+        width=0.2,
+        source=source,
+        legend_label="Conservative",
+        color="red")
+    p.vbar(x=dodge("region", 0.0, range=p.x_range),
+        top="LibDem",
+        width=0.2,
+        source=source,
+        legend_label="LibDem",
+        color="blue")
+    p.vbar(x=dodge("region", 0.25, range=p.x_range),
+        top="Labour",
+        width=0.2,
+        source=source,
+        legend_label="Labour",
+        color="yellow")
+
+
+    p.y_range.start = 20
+    p.y_range.end = 200
+    p.xaxis.major_label_orientation = 0.5
+    p.xgrid.grid_line_color = None
+    p.legend.location = "top_center"
+    p.legend.orientation = "horizontal"
+
+    show(p)
+
+
+![elections](election_bar_plot.png "Grouped bar chart")
