@@ -140,3 +140,83 @@ In the above plot, `ColumnDataSource` is used to store the data for the election
 `legend`, a  property of a Bokeh figure that allows you to add a legend to the plot is used to add and customise the legend of the plot.
 
 Always remember to run `output_notebook()` in order to display your plots inline if you are using jupyter notebook.
+
+**Density Plots**
+
+Histograms are usually the most common method of visualising density distributions. Consider the following data set:
+
+    # import libraries
+    import pandas as pd
+    ​
+    data = {
+        'age_range':['0-5',
+                    '6-10',
+                    '11-15',
+                    '16-20',
+                    '21-25',
+                    '26-30',
+                    '31-35',
+                    '36-40',
+                    '41-45',
+                    '46-50',
+                    '51-55',
+                    '56-60'],
+        'count':[36,19,18,99,139,121,76,74,54,50,26,22],
+        }
+    ​
+    age_interval = list(range(0,61,5))
+
+We can visualise the age distribution in this data set using a histogram as follows:
+
+    from bokeh.plotting import figure, show
+
+    p = figure(title="Age Distribution",
+            sizing_mode="stretch_width",
+            width=100,
+            height=400,
+            toolbar_location=None,
+            )
+    p.quad(left=age_interval[:-1],
+        right=age_interval[1:],
+        bottom=0,
+        top=data['count'],
+        color='skyblue',
+        line_color='white',
+        line_width=2.5,
+        alpha=0.9)
+
+    p.xaxis.axis_label = "Age range"
+    p.yaxis.axis_label = "Count"
+
+    show(p)
+
+​
+The `quad()` method is a Bokeh glyph method used to create a quadrilateral shape with four vertices. It takes in four lists of coordinates, which correspond to the x and y coordinates of the four vertices, and optional parameters to customize the appearance of the glyph.
+
+Here are the parameters for the `quad()` method:
+
+*left* (float): The x-coordinates of the left edges of the quads.
+
+*right* (float): The x-coordinates of the right edges of the quads.
+
+*bottom* (float): The y-coordinates of the bottom edges of the quads.
+
+*top* (float): The y-coordinates of the top edges of the quads.
+
+These parameters can be lists or arrays of values that specify the coordinates of each quad. In addition to these required parameters, the quad() method also accepts the following optional parameters:
+
+*color* (str): The color of the quad outlines.
+
+*alpha* (float): The transparency of the quad outlines and fills.
+
+*line_width* (float): The width of the quad outlines.
+
+*line_color* (str): The color of the quad outlines.
+
+*line_alpha* (float): The transparency of the quad outlines.
+
+*fill_color* (str): The fill color of the quads.
+
+*fill_alpha* (float): The transparency of the quad fills.
+
+​
