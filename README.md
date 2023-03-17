@@ -1,4 +1,4 @@
-![Bokeh](bokeh.png)
+![Bokeh](images/bokeh.png)
 
 # Fundamentals of Data Visualisation using Bokeh.
 
@@ -22,7 +22,7 @@ There are two ways in which you can display the visualisations created using Bok
     # run output_notebook to plot inline
     `output_notebook()`
 
-![output](bokeh_loaded.png)
+![output](images/bokeh_loaded.png)
     
  **Bar Charts**
 
@@ -72,7 +72,7 @@ You can create vertical or horizontal bar charts with Bokeh as follows:
              sizing_mode = "stretch_width"))
 
 
-![bars](bar.png "Horizontal and vertical bars.")
+![bars](images/bar.png "Horizontal and vertical bars.")
 
 You can also create grouped bar charts if you have two or more sets of categories you want to show their amounts.
 
@@ -128,7 +128,7 @@ You can also create grouped bar charts if you have two or more sets of categorie
     show(p)
 
 
-![elections](election_bar_plot.png "Grouped bar chart")
+![elections](images/election_bar_plot.png "Grouped bar chart")
 
 
 In the above plot, `ColumnDataSource` is used to store the data for the election results. The ColumnDataSource (CDS) is the core of most Bokeh plots. It provides the data to the glyphs of your plot. For more information about CDS, see [here](https://docs.bokeh.org/en/latest/docs/user_guide/basic/data.html#ug-basic-data-cds).
@@ -190,7 +190,7 @@ We can visualise the age distribution in this data set using a histogram as foll
 
     show(p)
 
-![output](histogram.png "Age distribution histogram")
+![output](images/histogram.png "Age distribution histogram")
 
 ​
 The `quad()` method is a Bokeh glyph method used to create a quadrilateral shape with four vertices. It takes in four lists of coordinates, which correspond to the x and y coordinates of the four vertices, and optional parameters to customize the appearance of the glyph.
