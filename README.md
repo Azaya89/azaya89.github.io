@@ -190,6 +190,8 @@ We can visualise the age distribution in this data set using a histogram as foll
 
     show(p)
 
+![output](histogram.png "Age distribution histogram")
+
 ​
 The `quad()` method is a Bokeh glyph method used to create a quadrilateral shape with four vertices. It takes in four lists of coordinates, which correspond to the x and y coordinates of the four vertices, and optional parameters to customize the appearance of the glyph.
 
