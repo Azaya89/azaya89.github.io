@@ -221,4 +221,78 @@ These parameters can be lists or arrays of values that specify the coordinates o
 
 *fill_alpha* (float): The transparency of the quad fills.
 
-​
+
+#### **Visualising Proportions**
+
+*Pie Charts* are a common way of visualising proportions. It helps to quickly and easily understand how a given part is compared to a whole.
+
+Consider the following data sample:
+
+    party = ['CDU', 'SPD', 'FDP']
+    num_seats = [243, 214, 39]
+
+You can make a Pie chart showing the proportion of the total seats each party holds as follows:
+
+    from math import pi
+    from bokeh.transform import cumsum
+    import pandas as pd
+
+    # create a pandas dataframe with the data sample
+    df = pd.DataFrame({'party': party,
+                    'seats': num_seats})
+
+    # add more columns for plotting 
+    df['angle'] = df['seats']/df['seats'].sum() * 2*pi
+    df['color'] = ['black', 'red', 'yellow']
+
+    # create plot figure and enter parameters
+    p = figure(title="Party seats by proportion",
+            height =300,
+            toolbar_location = None,
+            tools = 'hover',
+            tooltips = '@party: @seats',
+            x_range=(0, 1),
+            sizing_mode='stretch_width')
+
+    # plot pie chart with relevant parameters
+    p.wedge(x=0.5,
+            y=0.5,
+            radius=0.25,
+            start_angle=cumsum('angle', include_zero=True),
+            end_angle=cumsum('angle'),
+            line_color="white",
+            legend_field='party',
+            color= 'color',
+            source=df)
+
+    # remove axis labels and grid lines from plot
+    p.axis.axis_label = None
+    p.axis.visible = False
+    p.grid.grid_line_color = None
+
+
+    show(p)
+
+
+![output](images/pie.png "Pie chart showing proportions")
+
+
+The `angle` column added to the pandas dataframe contains the angle of each wedge in radians, which is proportional to the number of seats held by each party.
+
+**The `wedge()` method** is used to draw each wedge in the plot. It takes the following arguments:
+
+*x* (float): specifies the midpoint position of the circle in the x axis.
+
+*y* (float): specifies the midpoint position of the circle in the y axis.
+
+*radius* (float): takes the size of the circle radius.
+
+*start and end angle* (float): computed using the cumsum function, which calculates the cumulative sum of the angle column of the DataFrame. This ensures that each wedge starts where the previous one left off.
+
+Other optional parameters can also be included like color and legend fields.
+
+The `color` argument specifies the color of each wedge based on the color column of the DataFrame, and the `legend_field` argument adds a legend to the plot showing the name of each party.
+
+Finally, the code also sets some additional plot properties using the axis and grid properties of the plot.
+
+    ​
