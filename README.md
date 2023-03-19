@@ -4,6 +4,7 @@
 
 ### [Book](https://clauswilke.com/dataviz/index.html) by Claus O. Wilke
 
+
 ## Introduction.
 
 #### What is Bokeh?
@@ -12,7 +13,7 @@
 
 In this blog post, I will demonstrating how to create some common visualisations with Bokeh using Jupyter notebook. In order to follow, and possibly recreate these plots, you should have [Python](https://www.python.org) installed on your local computer and also jupyter notebook, which can be gotten via the anaconda distribution [here](https://www.anaconda.org)
 
-### Directory of visualisations.
+### **Directory of visualisations.**
 
 There are two ways in which you can display the visualisations created using Bokeh. By default, Bokeh displays the plots on the web browser but you can display your plots inline on your jupyter notebook by importing and running `output_notebook` before showing the plots.
 
@@ -24,9 +25,9 @@ There are two ways in which you can display the visualisations created using Bok
 
 ![output](images/bokeh_loaded.png)
     
- **Bar Charts**
+ ### **Bar Charts**
 
-You can create vertical or horizontal bar charts with Bokeh as follows:
+You can create vertical or horizontal bar charts with Bokeh using some sample data as follows:
 
 
     # Import the relevant libraries
@@ -74,9 +75,9 @@ You can create vertical or horizontal bar charts with Bokeh as follows:
 
 ![bars](images/bar.png "Horizontal and vertical bars.")
 
-You can also create grouped bar charts if you have two or more sets of categories you want to show their amounts.
+You can also create grouped bar charts if you have two or more sets of categories you want to compare their amounts side by side:
 
-    #import libraries
+    # import libraries
     from bokeh.models import ColumnDataSource
     from bokeh.transform import dodge
 
@@ -141,9 +142,9 @@ In the above plot, `ColumnDataSource` is used to store the data for the election
 
 Always remember to run `output_notebook()` in order to display your plots inline if you are using jupyter notebook.
 
-**Density Plots**
+### **Density Plots**
 
-Histograms are usually the most common method of visualising density distributions. Consider the following data set:
+***Histograms*** are usually the most common method of visualising density distributions. Consider the following data set:
 
     # import libraries
     import pandas as pd
@@ -224,7 +225,7 @@ These parameters can be lists or arrays of values that specify the coordinates o
 
 #### **Visualising Proportions**
 
-*Pie Charts* are a common way of visualising proportions. It helps to quickly and easily understand how a given part is compared to a whole.
+***Pie Charts*** are a common way of visualising proportions. It helps to quickly and easily understand how a given part is compared to a whole.
 
 Consider the following data sample:
 
@@ -295,4 +296,58 @@ The `color` argument specifies the color of each wedge based on the color column
 
 Finally, the code also sets some additional plot properties using the axis and grid properties of the plot.
 
-    ​
+
+***Stacked bars*** are another method of visualising proportions, especially if the data is being compared across different times.
+
+Consider the following [data](https://data.ipu.org/content/rwanda?chamber_id=13513) about women participation in the Rwandan parliament over the years:
+
+    import pandas as pd
+
+    data = {
+        'Year': ['1981','1983','1988','1994','2003','2008','2011','2013','2018'],
+        '%women': [6.3,12.9,17.1,4.3,48.8,56.3,38.5,56.3,61.3]}
+
+    df = pd.DataFrame(data)
+    df['%men'] = [100-x for x in df['%women']]
+
+You can create a stacked bar chart showing how the proportions have been changing over the years as follows:
+
+    from bokeh.plotting import figure, show 
+    from bokeh.models import Span
+
+    p = figure(title = "Proportion of women and men in parliament",
+            height =300,
+            toolbar_location = None,
+            x_range= df.Year,
+            sizing_mode='stretch_width')
+
+    p.vbar_stack(['%men', '%women'],
+                x='Year',
+                width=0.95,
+                source=df,
+                color=['skyblue','pink'],
+                legend_label=['men', 'women'])
+
+    p.y_range.start = 0
+    p.xgrid.grid_line_color = None
+    p.xaxis.axis_label = 'Year'
+    p.yaxis.axis_label = 'Percentage'
+    p.legend.location = 'top_right'
+    p.legend.orientation = 'vertical'
+    p.legend.background_fill_alpha = 0.3
+
+    # Add horizontal line
+    line = Span(location=50,
+                dimension='width',
+                line_color='black',
+                line_width=1.5)
+
+    p.add_layout(line)
+
+    show(p)
+
+![output](images/stacked_bar.png "Stack Bar chart")
+
+The `vbar_stack` method plots the data ontop of each other and a casual glance at the plot reveals how the percentage of women in parliament has been increasing over the years with the percentage crossing 50% around 2003.
+
+A horizontal line is also drawn to clearly show the threshold where the participation got to 50%.
