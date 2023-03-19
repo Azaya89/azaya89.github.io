@@ -225,7 +225,7 @@ These parameters can be lists or arrays of values that specify the coordinates o
 
 #### **Visualising Proportions**
 
-***Pie Charts*** are a common way of visualising proportions. It helps to quickly and easily understand how a given part is compared to a whole.
+(A) ***Pie Charts*** are a common way of visualising proportions. It helps to quickly and easily understand how a given part is compared to a whole.
 
 Consider the following data sample:
 
@@ -297,7 +297,7 @@ The `color` argument specifies the color of each wedge based on the color column
 Finally, the code also sets some additional plot properties using the axis and grid properties of the plot.
 
 
-***Stacked bars*** are another method of visualising proportions, especially if the data is being compared across different times.
+(B) ***Stacked bars*** are another method of visualising proportions, especially if the data is being compared across different times.
 
 Consider the following [data](https://data.ipu.org/content/rwanda?chamber_id=13513) about women participation in the Rwandan parliament over the years:
 
