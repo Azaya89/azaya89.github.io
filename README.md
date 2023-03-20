@@ -319,6 +319,7 @@ You can create a stacked bar chart showing how the proportions have been changin
             height =300,
             toolbar_location = None,
             x_range= df.Year,
+            y_range = (0,100),
             sizing_mode='stretch_width')
 
     p.vbar_stack(['%men', '%women'],
