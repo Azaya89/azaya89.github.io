@@ -1,8 +1,8 @@
 ![Bokeh](images/bokeh.png)
 
-# Fundamentals of Data Visualisation using Bokeh.
+# Fundamentals of Data Visualisation (using Bokeh).
 
-### [Book](https://clauswilke.com/dataviz/index.html) by Claus O. Wilke
+### [Book](https://clauswilke.com/dataviz/index.html) by Claus O. Wilke as reference.
 
 
 ## Introduction.
@@ -11,7 +11,7 @@
 
 [Bokeh](https://docs.bokeh.org/en/latest/index.html) is a Python library for creating interactive visualizations for modern web browsers. It helps you build beautiful graphics, ranging from simple plots to complex dashboards with streaming datasets. With Bokeh, you can create JavaScript-powered visualizations without writing any JavaScript yourself.
 
-In this blog post, I will demonstrating how to create some common visualisations with Bokeh using Jupyter notebook. In order to follow, and possibly recreate these plots, you should have [Python](https://www.python.org) installed on your local computer and also jupyter notebook, which can be gotten via the anaconda distribution [here](https://www.anaconda.org)
+In this blog post, I will be demonstrating how to create some common visualisations found in the referenced book with Bokeh using Jupyter notebook. In order to follow, and possibly recreate these plots, you should have [Python](https://www.python.org) installed on your local computer and also jupyter notebook, which can be gotten via the anaconda distribution [here](https://www.anaconda.org)
 
 ### **Directory of visualisations.**
 
@@ -24,10 +24,11 @@ There are two ways in which you can display the visualisations created using Bok
     `output_notebook()`
 
 ![output](images/bokeh_loaded.png)
+
     
  ### **Bar Charts**
 
-You can create vertical or horizontal bar charts with Bokeh using some sample data as follows:
+You can create **vertical** or **horizontal** bar charts with Bokeh using some sample data as follows:
 
 
     # Import the relevant libraries
@@ -75,7 +76,7 @@ You can create vertical or horizontal bar charts with Bokeh using some sample da
 
 ![bars](images/bar.png "Horizontal and vertical bars.")
 
-You can also create grouped bar charts if you have two or more sets of categories you want to compare their amounts side by side:
+You can also create **grouped** bar charts if you have two or more sets of categories you want to compare their amounts side by side:
 
     # import libraries
     from bokeh.models import ColumnDataSource
@@ -138,7 +139,7 @@ In the above plot, `ColumnDataSource` is used to store the data for the election
 `dodge()` is a function in Bokeh that shifts the bars horizontally so that they don't overlap. It takes three parameters: the name of the column to dodge, the amount to shift the bar (in this case, -0.25, 0.0, and 0.25), and the range of the x-axis.
 
 
-`legend`, a  property of a Bokeh figure that allows you to add a legend to the plot is used to add and customise the legend of the plot.
+`legend`, a  property of a Bokeh figure that allows you to add a legend to the plot. It is used to add and customise the legend of the plot.
 
 Always remember to run `output_notebook()` in order to display your plots inline if you are using jupyter notebook.
 
