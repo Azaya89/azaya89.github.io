@@ -28,57 +28,61 @@ There are two ways in which you can display the visualisations created using Bok
     
  ### **Bar Charts**
 
-You can create **vertical** or **horizontal** bar charts with Bokeh using some sample data as follows:
+Bar charts are tools used to visualise amounts. You can create *vertical* or *horizontal* bar charts with Bokeh as follows:
 
 
     # Import the relevant libraries
     from bokeh.plotting import figure, show
     from bokeh.layouts import row
 
-    # Sample data
-    names = ['Mary', 'Peter', 'James', 'Mercy']
+    # sample data
+    names = ["Mary", "Peter", "James", "Mercy"]
     ages = [20, 23, 15, 27]
-    
+
     # plot a vertical bar
     p1 = figure(
         x_range=names,
         height=300,
         title="Age of siblings",
-        x_axis_label = "Names",
-        y_axis_label = "Ages"
+        x_axis_label="Names",
+        y_axis_label="Ages"
         )
-    p1.vbar(x = names, top= ages, width=0.5, color = "green")
+    p1.vbar(x=names,
+            top=ages,
+            width=0.5,
+            color="green")
 
     # plot a horizontal bar
     p2 = figure(
-        y_range = names,
-        x_range = (10, 30),
+        y_range=names,
+        x_range=(10, 30),
         width=300,
         height=300,
         title="Age of siblings",
-        x_axis_label = "Names",
-        y_axis_label = "Ages",
-        toolbar_location = None # option to remove the plot toolbar
+        x_axis_label="Names",
+        y_axis_label="Ages",
+        toolbar_location=None # option to remove the plot toolbar
         )
-    p2.hbar(y = names,
-            left = 10,
-            right = ages,
-            height = 0.5,
-            color = "red")
+    p2.hbar(y=names,
+            left=10,
+            right=ages,
+            height=0.5,
+            color="red")
 
     # specify y_range for the vertical plot
     p1.y_range.start = 10
 
     # display both plots in the same row
-    show(row(children = [p1, p2], 
-             sizing_mode = "stretch_width"))
+    show(row(children=[p1, p2], 
+            sizing_mode="stretch_width"))
+
 
 
 ![bars](images/bar.png "Horizontal and vertical bars.")
 
-You can also create **grouped** bar charts if you have two or more sets of categories you want to compare their amounts side by side:
+You can also create *grouped* bar charts if you have two or more sets of categories you want to compare their amounts side by side:
 
-    # import libraries
+    #import libraries
     from bokeh.models import ColumnDataSource
     from bokeh.transform import dodge
 
@@ -97,7 +101,7 @@ You can also create **grouped** bar charts if you have two or more sets of categ
     p = figure(title="Election votes by region",
             x_range=regions,
             height=300,
-            toolbar_location = None,
+            toolbar_location=None,
             sizing_mode="stretch_width"
             )
     p.vbar(x=dodge("region", -0.25, range=p.x_range),
@@ -151,21 +155,21 @@ Always remember to run `output_notebook()` in order to display your plots inline
     import pandas as pd
     ​
     data = {
-        'age_range':['0-5',
-                    '6-10',
-                    '11-15',
-                    '16-20',
-                    '21-25',
-                    '26-30',
-                    '31-35',
-                    '36-40',
-                    '41-45',
-                    '46-50',
-                    '51-55',
-                    '56-60'],
-        'count':[36,19,18,99,139,121,76,74,54,50,26,22],
-        }
-    ​
+    "age_range":["0-5",
+                 "6-10",
+                 "11-15",
+                 "16-20",
+                 "21-25",
+                 "26-30",
+                 "31-35",
+                 "36-40",
+                 "41-45",
+                 "46-50",
+                 "51-55",
+                 "56-60"],
+    "count":[36,19,18,99,139,121,76,74,54,50,26,22],
+       }
+
     age_interval = list(range(0,61,5))
 
 We can visualise the age distribution in this data set using a histogram as follows:
@@ -179,13 +183,13 @@ We can visualise the age distribution in this data set using a histogram as foll
             toolbar_location=None,
             )
     p.quad(left=age_interval[:-1],
-        right=age_interval[1:],
-        bottom=0,
-        top=data['count'],
-        color='skyblue',
-        line_color='white',
-        line_width=2.5,
-        alpha=0.9)
+       right=age_interval[1:],
+       bottom=0,
+       top=data["count"],
+       color="skyblue",
+       line_color="white",
+       line_width=2,
+       alpha=0.9)
 
     p.xaxis.axis_label = "Age range"
     p.yaxis.axis_label = "Count"
@@ -226,48 +230,47 @@ These parameters can be lists or arrays of values that specify the coordinates o
 
 #### **Visualising Proportions**
 
-(A) ***Pie Charts*** are a common way of visualising proportions. It helps to quickly and easily understand how a given part is compared to a whole.
+- ***Pie Charts*** are a common way of visualising proportions. It helps to quickly and easily understand how a given part is compared to a whole.
 
 Consider the following data sample:
 
-    party = ['CDU', 'SPD', 'FDP']
+    party = ["CDU", "SPD", "FDP"]
     num_seats = [243, 214, 39]
+
+
 
 You can make a Pie chart showing the proportion of the total seats each party holds as follows:
 
+    from bokeh.plotting import figure, show
     from math import pi
     from bokeh.transform import cumsum
     import pandas as pd
 
     # create a pandas dataframe with the data sample
-    df = pd.DataFrame({'party': party,
-                    'seats': num_seats})
+    df = pd.DataFrame({"party": party,
+                    "seats": num_seats})
 
-    # add more columns for plotting 
-    df['angle'] = df['seats']/df['seats'].sum() * 2*pi
-    df['color'] = ['black', 'red', 'yellow']
+    df["angle"] = df["seats"]/df["seats"].sum()*2*pi
+    df["color"] = ["black", "red", "yellow"]
 
-    # create plot figure and enter parameters
     p = figure(title="Party seats by proportion",
-            height =300,
-            toolbar_location = None,
-            tools = 'hover',
-            tooltips = '@party: @seats',
+            height=300,
+            toolbar_location=None,
+            tools="hover",
+            tooltips="@party: @seats",
             x_range=(0, 1),
-            sizing_mode='stretch_width')
+            sizing_mode="stretch_width")
 
-    # plot pie chart with relevant parameters
     p.wedge(x=0.5,
             y=0.5,
             radius=0.25,
-            start_angle=cumsum('angle', include_zero=True),
-            end_angle=cumsum('angle'),
+            start_angle=cumsum("angle", include_zero=True),
+            end_angle=cumsum("angle"),
             line_color="white",
-            legend_field='party',
-            color= 'color',
+            legend_field="party",
+            color="color",
             source=df)
 
-    # remove axis labels and grid lines from plot
     p.axis.axis_label = None
     p.axis.visible = False
     p.grid.grid_line_color = None
@@ -298,58 +301,94 @@ The `color` argument specifies the color of each wedge based on the color column
 Finally, the code also sets some additional plot properties using the axis and grid properties of the plot.
 
 
-(B) ***Stacked bars*** are another method of visualising proportions, especially if the data is being compared across different times.
+- ***Stacked bars*** are another method of visualising proportions, especially if the data is being compared across different times.
 
 Consider the following [data](https://data.ipu.org/content/rwanda?chamber_id=13513) about women participation in the Rwandan parliament over the years:
 
     import pandas as pd
 
     data = {
-        'Year': ['1981','1983','1988','1994','2003','2008','2011','2013','2018'],
-        '%women': [6.3,12.9,17.1,4.3,48.8,56.3,38.5,56.3,61.3]}
+        "Year": ["1981","1983","1988","1994","2003","2008","2011","2013","2018"],
+        "%women": [6.3,12.9,17.1,4.3,48.8,56.3,38.5,56.3,61.3]}
 
     df = pd.DataFrame(data)
-    df['%men'] = [100-x for x in df['%women']]
-
+    df["%men"] = [100-x for x in df["%women"]]
+             
 You can create a stacked bar chart showing how the proportions have been changing over the years as follows:
 
     from bokeh.plotting import figure, show 
     from bokeh.models import Span
 
-    p = figure(title = "Proportion of women and men in parliament",
-            height =300,
-            toolbar_location = None,
-            x_range= df.Year,
-            y_range = (0,100),
-            sizing_mode='stretch_width')
+    p = figure(title="Proportion of women and men in parliament",
+            height=300,
+            toolbar_location=None,
+            x_range=df.Year,
+            y_range=(0,100),
+            sizing_mode="stretch_width")
 
-    p.vbar_stack(['%men', '%women'],
-                x='Year',
+    p.vbar_stack(["%men", "%women"],
+                x="Year",
                 width=0.95,
                 source=df,
-                color=['skyblue','pink'],
-                legend_label=['men', 'women'])
+                color=["skyblue","pink"],
+                legend_label=["men", "women"])
 
     p.y_range.start = 0
     p.xgrid.grid_line_color = None
-    p.xaxis.axis_label = 'Year'
-    p.yaxis.axis_label = 'Percentage'
-    p.legend.location = 'top_right'
-    p.legend.orientation = 'vertical'
+    p.xaxis.axis_label = "Year"
+    p.yaxis.axis_label = "Percentage"
+    p.legend.location = "top_right"
+    p.legend.orientation = "vertical"
     p.legend.background_fill_alpha = 0.3
 
     # Add horizontal line
     line = Span(location=50,
-                dimension='width',
-                line_color='black',
+                dimension="width",
+                line_color="black",
                 line_width=1.5)
 
     p.add_layout(line)
 
     show(p)
 
+
 ![output](images/stacked_bar.png "Stack Bar chart")
 
 The `vbar_stack` method plots the data ontop of each other and a casual glance at the plot reveals how the percentage of women in parliament has been increasing over the years with the percentage crossing 50% around 2003.
 
 A horizontal line is also drawn to clearly show the threshold where the participation got to 50%.
+
+### Visualising time series
+
+*Line plots* and *Scatter plots* are a good way of visualising how things change over time. Take the previous data sample for example: You can plot a line graph and scatter plot to depict how the trend in women participation has evolved over the years.
+
+    import pandas as pd
+    from bokeh.plotting import figure, show
+
+    p = figure(title="Women participation over the years",
+            plot_height=300,
+            sizing_mode="stretch_both",
+            tools="hover",
+            tooltips="@Year: @{%women}%",
+            toolbar_location=None)
+
+    p.line(x="Year",
+        y="%women",
+        source=df,
+        line_width=2,
+        color="skyblue")
+
+    p.scatter(x="Year",
+            y="%women",
+            source=df,
+            size=5,
+            fill_color="grey")
+
+    p.xaxis.axis_label = "Year"
+    p.yaxis.axis_label = "Percentage"
+
+    show(p)
+
+![output](images/line_plot.png "Line and Scatter plot")
+
+The `scatter` method is used to plot the percentage points against the year while the `line` method is used to join the plot points together. The `hover` tool is used to add interactive options on the scatter points to show the actual values.
