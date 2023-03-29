@@ -369,7 +369,7 @@ A horizontal line is also drawn to clearly show the threshold where the particip
             plot_height=300,
             sizing_mode="stretch_both",
             tools="hover",
-            tooltips="@Year: @{%women}%",
+            tooltips="@Year: @{ %women}%",
             toolbar_location=None)
 
     p.line(x="Year",
