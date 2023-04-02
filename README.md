@@ -26,7 +26,7 @@ There are two ways in which you can display the visualisations created using Bok
 ![output](images/bokeh_loaded.png)
 
     
- ### **Bar Charts**
+### **Bar Charts**
 
 Bar charts are tools used to visualise amounts. You can create *vertical* or *horizontal* bar charts with Bokeh as follows:
 
@@ -266,7 +266,7 @@ You can make a Pie chart showing the proportion of the total seats each party ho
             radius=0.25,
             start_angle=cumsum("angle", include_zero=True),
             end_angle=cumsum("angle"),
-            line_color="white",
+            line_color=None,
             legend_field="party",
             color="color",
             source=df)
@@ -392,3 +392,5 @@ A horizontal line is also drawn to clearly show the threshold where the particip
 ![output](images/line_plot.png "Line and Scatter plot")
 
 The `scatter` method is used to plot the percentage points against the year while the `line` method is used to join the plot points together. The `hover` tool is used to add interactive options on the scatter points to show the actual values.
+
+When plotting multiple Bokeh plots in one figure, it's important to note that the plots are displayed in the order of their calling. In our last example, the line plot was displayed first before the scatter plots, which were then overlaid on top of it.
