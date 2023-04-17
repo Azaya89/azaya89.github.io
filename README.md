@@ -59,8 +59,8 @@ Bar charts are tools used to visualise amounts. You can create *vertical* or *ho
         width=300,
         height=300,
         title="Age of siblings",
-        x_axis_label="Names",
-        y_axis_label="Ages",
+        x_axis_label="Ages",
+        y_axis_label="Names",
         toolbar_location=None # option to remove the plot toolbar
         )
     p2.hbar(y=names,
