@@ -5,92 +5,83 @@ toc: false
 
 ## About Me
 
-Write a longer bio here — 3–5 sentences covering your background, what drives your work,
-and what you bring to a team. Be specific: tools you use, domains you work in, problems
-you like solving.
+I am a Python developer and data analyst with a growing focus on data science and machine learning.
+I currently work as a contractor with Anaconda, contributing to open-source Python projects with an
+emphasis on data analysis and visualization.
+
+I previously completed an Outreachy internship with the Bokeh team, where I recreated complex
+visualizations from Claus O. Wilke's *Fundamentals of Data Visualization*, documenting my approach
+through technical blog posts and translating theory into practical, reproducible workflows.
+
+Before transitioning into tech, I worked as a pharmacist for over seven years, managing clinical
+operations, inventory, and patient care. That background sharpened my analytical thinking and
+ability to solve real-world problems under pressure — skills I carry directly into data work.
 
 ---
 
 ## Experience
 
-```{=html}
-<div class="timeline">
+**Open Source Python Developer · Anaconda, Inc. · Contract · Remote**
+*Sep 2024 – Present*
 
-  <div class="timeline-item">
-    <div class="timeline-meta">
-      <span class="timeline-date">Month Year – Present</span>
-      <span class="timeline-company">Company Name</span>
-    </div>
-    <div class="timeline-body">
-      <h4>Job Title</h4>
-      <p>
-        One to two sentences describing your responsibilities and impact. Use numbers
-        where possible (e.g., "reduced pipeline runtime by 40%").
-      </p>
-      <ul>
-        <li>Key achievement or responsibility</li>
-        <li>Key achievement or responsibility</li>
-      </ul>
-    </div>
-  </div>
+- Contributing to open-source Python projects with an emphasis on data analysis and visualization
+- Developed agent skills and an evaluation framework to improve LLM-generated HoloViz code, supported by a NumFOCUS Small Development Grant
+- Benchmarked common LLM failure modes (hallucinated APIs, outdated syntax, missing imports)
+- Technical writing and documentation across the HoloViz ecosystem
 
-  <div class="timeline-item">
-    <div class="timeline-meta">
-      <span class="timeline-date">Month Year – Month Year</span>
-      <span class="timeline-company">Company Name</span>
-    </div>
-    <div class="timeline-body">
-      <h4>Job Title</h4>
-      <p>
-        One to two sentences describing your responsibilities and impact.
-      </p>
-      <ul>
-        <li>Key achievement or responsibility</li>
-        <li>Key achievement or responsibility</li>
-      </ul>
-    </div>
-  </div>
+---
 
-  <div class="timeline-item">
-    <div class="timeline-meta">
-      <span class="timeline-date">Month Year – Month Year</span>
-      <span class="timeline-company">Company Name</span>
-    </div>
-    <div class="timeline-body">
-      <h4>Job Title</h4>
-      <p>
-        One to two sentences describing your responsibilities and impact.
-      </p>
-      <ul>
-        <li>Key achievement or responsibility</li>
-        <li>Key achievement or responsibility</li>
-      </ul>
-    </div>
-  </div>
+**Python Developer · HoloViz · Contract · Remote**
+*Jan 2024 – Aug 2024*
 
-</div>
-```
+- Contributed to the HoloViz open-source ecosystem, focusing on data visualization tooling
+- Technical documentation and reproducible workflow examples
+
+---
+
+**Project Intern · Outreachy / Bokeh · Remote**
+*May 2023 – Aug 2023*
+
+- Recreated complex visualizations from Claus O. Wilke's *Fundamentals of Data Visualization* using Bokeh
+- Documented each visualization with a technical blog post, making advanced techniques accessible and reproducible
+
+---
+
+**Pharmacist · Evergreen Hernice Pharmacy · Port Harcourt, Nigeria**
+*Mar 2016 – May 2023*
+
+- Managed drug stock inventory and logistics to eliminate stock-outs and medication expiry
+- Collaborated with staff to consistently improve sales outcomes
+- Delivered patient-focused care with thorough counselling on drug adherence
+
+---
+
+**Pharmacist · General Hospital, Gembu · Sardauna, Taraba State, Nigeria**
+*Oct 2015 – Mar 2016*
+
+- Initiated daily pharmacist clinical rotations that improved in-patient outcomes
+- Provided HIV/AIDS adherence counselling, reducing PLWHA prevalence in the local government
+- Monitored adverse drug reactions and managed HAART medication inventory
 
 ---
 
 ## Education
 
-```{=html}
-<div class="timeline">
+**MSc · Data Science · Northumbria University, Newcastle**
+*Jan 2026 – Jun 2027*
 
-  <div class="timeline-item">
-    <div class="timeline-meta">
-      <span class="timeline-date">Year – Year</span>
-      <span class="timeline-company">University Name</span>
-    </div>
-    <div class="timeline-body">
-      <h4>Degree · Field of Study</h4>
-      <p>Optional: dissertation topic, honors, relevant coursework.</p>
-    </div>
-  </div>
+Machine learning algorithms, statistical analysis in R. Member of Northumbria University Chess Society.
 
-</div>
-```
+---
+
+**B.Pharm · Pharmacy · University of Nigeria, Nsukka**
+*2007 – 2012*
+
+---
+
+## Certifications
+
+- **Introduction to Programming Using Python** — CS50, December 2023
 
 ---
 
@@ -98,16 +89,22 @@ you like solving.
 
 | Category | Tools / Technologies |
 |---|---|
-| Languages | Python, SQL, [add yours] |
-| Data & Analysis | pandas, NumPy, [add yours] |
-| Visualization | Matplotlib, Bokeh, [add yours] |
-| Infrastructure | [add yours] |
-| Other | [add yours] |
+| Languages | Python, R, SQL |
+| Data & Analysis | Pandas, NumPy, statistical modelling |
+| Visualization | Bokeh, hvPlot, Matplotlib |
+| ML & Data Science | Machine learning, scikit-learn |
+| Other | Technical writing, open-source contribution, Django |
+
+---
+
+## Languages
+
+English · Igbo
 
 ---
 
 ## Contact
 
-- **Email:** [your@email.com](mailto:your@email.com)
+- **Email:** [akoritaisaiah@gmail.com](mailto:akoritaisaiah@gmail.com)
 - **GitHub:** [github.com/azaya89](https://github.com/azaya89)
-- **LinkedIn:** [linkedin.com/in/your-profile](https://linkedin.com/in/your-profile)
+- **LinkedIn:** [linkedin.com/in/isaiah-akorita](https://linkedin.com/in/isaiah-akorita)

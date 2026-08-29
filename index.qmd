@@ -4,44 +4,36 @@ page-layout: full
 toc: false
 ---
 
-```{=html}
-<section class="hero">
-  <div class="hero-content">
-    <p class="hero-eyebrow">Hello, I'm</p>
-    <h1 class="hero-name">Your Name</h1>
-    <p class="hero-tagline">Data professional · [Your role / specialty here]</p>
-    <p class="hero-bio">
-      Brief 2–3 sentence bio goes here. Describe what you do, what you care about,
-      and what kind of work you're looking for. Keep it direct and specific.
-    </p>
-    <div class="hero-links">
-      <a class="btn-primary" href="about.qmd">About me</a>
-      <a class="btn-secondary" href="projects/index.qmd">See my work</a>
-    </div>
-  </div>
-</section>
+# Isaiah Akorita
 
-<section class="highlights">
-  <div class="highlight-card">
-    <h3>Skills</h3>
-    <ul>
-      <li>Skill one</li>
-      <li>Skill two</li>
-      <li>Skill three</li>
-      <li>Skill four</li>
-    </ul>
-  </div>
-  <div class="highlight-card">
-    <h3>Recent Project</h3>
-    <p class="card-meta">Category · Year</p>
-    <p>Short description of your most recent or most notable project.</p>
-    <a href="projects/index.qmd">View project →</a>
-  </div>
-  <div class="highlight-card">
-    <h3>Latest Post</h3>
-    <p class="card-meta">Topic · Year</p>
-    <p>Short description of your most recent blog post or piece of writing.</p>
-    <a href="blog/index.qmd">Read post →</a>
-  </div>
-</section>
-```
+**Data Analyst · Python Developer · Technical Writer**
+
+I build data-driven projects using Python and R, with a focus on analysis, visualization,
+and open-source contribution. Currently contracting with Anaconda and pursuing an MSc in
+Data Science at Northumbria University.
+
+[About me](about.qmd){.btn-primary} [See my work](projects/index.qmd){.btn-secondary}
+
+---
+
+### Skills
+- Python · R · SQL
+- Pandas · Bokeh · hvPlot
+- Machine Learning
+- Technical Writing
+
+### Recent Work
+**Open Source · 2024–Present**
+
+Contributing to open-source Python projects at Anaconda with a focus on data analysis,
+visualization, and LLM tooling for the HoloViz ecosystem.
+
+[View projects →](projects/index.qmd)
+
+### Latest Writing
+**NumFOCUS SDG · 2025**
+
+Mid-project update on making HoloViz LLM-friendly — benchmarking failure modes,
+building agent skills, and measuring improvement.
+
+[Read more →](blog/index.qmd)

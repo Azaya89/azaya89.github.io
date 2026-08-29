@@ -3,73 +3,57 @@ title: "Projects"
 toc: false
 ---
 
-A selection of work across data analysis, visualization, and engineering.
-Each project links to a write-up, GitHub repo, or live demo.
+A selection of work across data analysis, visualization, open-source contribution, and software development.
 
-```{=html}
-<div class="project-grid">
+---
 
-  <div class="project-card">
-    <div class="project-header">
-      <h3>Project Title One</h3>
-      <span class="project-tag">Python</span>
-      <span class="project-tag">Data Analysis</span>
-    </div>
-    <p>
-      Two to three sentence description of the project. What problem did it solve?
-      What was your approach? What was the outcome?
-    </p>
-    <div class="project-links">
-      <a href="#">GitHub →</a>
-      <a href="#">Live demo →</a>
-    </div>
-  </div>
+### HoloViz LLM Skills
+`Python` `Open Source` `AI Tooling`
 
-  <div class="project-card">
-    <div class="project-header">
-      <h3>Project Title Two</h3>
-      <span class="project-tag">SQL</span>
-      <span class="project-tag">Dashboard</span>
-    </div>
-    <p>
-      Two to three sentence description of the project. What problem did it solve?
-      What was your approach? What was the outcome?
-    </p>
-    <div class="project-links">
-      <a href="#">GitHub →</a>
-    </div>
-  </div>
+Developed reusable agent skills and an evaluation framework to improve the quality of
+LLM-generated code for the HoloViz ecosystem, funded by a NumFOCUS Small Development Grant.
+Benchmarked common failure modes including hallucinated APIs, outdated syntax, and missing imports.
 
-  <div class="project-card">
-    <div class="project-header">
-      <h3>Project Title Three</h3>
-      <span class="project-tag">Machine Learning</span>
-      <span class="project-tag">Python</span>
-    </div>
-    <p>
-      Two to three sentence description of the project. What problem did it solve?
-      What was your approach? What was the outcome?
-    </p>
-    <div class="project-links">
-      <a href="#">GitHub →</a>
-      <a href="#">Write-up →</a>
-    </div>
-  </div>
+[GitHub →](https://github.com/holoviz-topics/holoviz-skills)
 
-  <div class="project-card">
-    <div class="project-header">
-      <h3>Project Title Four</h3>
-      <span class="project-tag">Visualization</span>
-      <span class="project-tag">Bokeh</span>
-    </div>
-    <p>
-      Two to three sentence description of the project. What problem did it solve?
-      What was your approach? What was the outcome?
-    </p>
-    <div class="project-links">
-      <a href="#">GitHub →</a>
-    </div>
-  </div>
+---
 
-</div>
-```
+### Fundamentals of Data Visualization (Bokeh)
+`Python` `Bokeh` `Data Visualization`
+
+Recreated complex visualizations from Claus O. Wilke's *Fundamentals of Data Visualization*
+using the Bokeh library during an Outreachy internship. Each visualization was documented
+with a technical blog post covering the approach and workflow.
+
+[GitHub →](https://github.com/Azaya89)
+
+---
+
+### Blog App — Django
+`Python` `Django` `Web Development`
+
+A full-stack blog application built with Django and Bootstrap 4. Users can register,
+log in, publish topics, and write entries. Deployed on Heroku.
+
+[GitHub →](https://github.com/Azaya89)
+
+---
+
+### Alien Invasion — Pygame
+`Python` `Pygame`
+
+A classic side-scrolling shooter game built with Pygame. Aliens move across and down
+the screen, accelerating as levels progress. The player has three lives; the game ends
+when all ships are destroyed.
+
+[GitHub →](https://github.com/Azaya89)
+
+---
+
+### Wikidata Author Name Identification
+`Python` `Open Source` `Volunteering`
+
+Volunteered on a Wikidata project to automatically identify first and last author names
+in academic paper citations, improving citation accuracy across Wikicite and Wikimedia.
+
+[GitHub →](https://github.com/Azaya89/Outreachy-Wikidata-project)
