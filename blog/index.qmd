@@ -1,0 +1,16 @@
+---
+title: "Blog"
+toc: false
+listing:
+  contents: posts
+  sort: "date desc"
+  type: table
+  fields: [date, title, description]
+  date-format: "MMMM D, YYYY"
+---
+
+Technical writing on data, code, and tools.
+
+::: {.callout-note appearance="minimal"}
+Posts coming soon. Check back later, or [follow on GitHub](https://github.com/azaya89).
+:::

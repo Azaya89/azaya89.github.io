@@ -1,0 +1,75 @@
+---
+title: "Projects"
+toc: false
+---
+
+A selection of work across data analysis, visualization, and engineering.
+Each project links to a write-up, GitHub repo, or live demo.
+
+```{=html}
+<div class="project-grid">
+
+  <div class="project-card">
+    <div class="project-header">
+      <h3>Project Title One</h3>
+      <span class="project-tag">Python</span>
+      <span class="project-tag">Data Analysis</span>
+    </div>
+    <p>
+      Two to three sentence description of the project. What problem did it solve?
+      What was your approach? What was the outcome?
+    </p>
+    <div class="project-links">
+      <a href="#">GitHub →</a>
+      <a href="#">Live demo →</a>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <div class="project-header">
+      <h3>Project Title Two</h3>
+      <span class="project-tag">SQL</span>
+      <span class="project-tag">Dashboard</span>
+    </div>
+    <p>
+      Two to three sentence description of the project. What problem did it solve?
+      What was your approach? What was the outcome?
+    </p>
+    <div class="project-links">
+      <a href="#">GitHub →</a>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <div class="project-header">
+      <h3>Project Title Three</h3>
+      <span class="project-tag">Machine Learning</span>
+      <span class="project-tag">Python</span>
+    </div>
+    <p>
+      Two to three sentence description of the project. What problem did it solve?
+      What was your approach? What was the outcome?
+    </p>
+    <div class="project-links">
+      <a href="#">GitHub →</a>
+      <a href="#">Write-up →</a>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <div class="project-header">
+      <h3>Project Title Four</h3>
+      <span class="project-tag">Visualization</span>
+      <span class="project-tag">Bokeh</span>
+    </div>
+    <p>
+      Two to three sentence description of the project. What problem did it solve?
+      What was your approach? What was the outcome?
+    </p>
+    <div class="project-links">
+      <a href="#">GitHub →</a>
+    </div>
+  </div>
+
+</div>
+```

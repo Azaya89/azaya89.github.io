@@ -1,0 +1,47 @@
+---
+title: ""
+page-layout: full
+toc: false
+---
+
+```{=html}
+<section class="hero">
+  <div class="hero-content">
+    <p class="hero-eyebrow">Hello, I'm</p>
+    <h1 class="hero-name">Your Name</h1>
+    <p class="hero-tagline">Data professional · [Your role / specialty here]</p>
+    <p class="hero-bio">
+      Brief 2–3 sentence bio goes here. Describe what you do, what you care about,
+      and what kind of work you're looking for. Keep it direct and specific.
+    </p>
+    <div class="hero-links">
+      <a class="btn-primary" href="about.qmd">About me</a>
+      <a class="btn-secondary" href="projects/index.qmd">See my work</a>
+    </div>
+  </div>
+</section>
+
+<section class="highlights">
+  <div class="highlight-card">
+    <h3>Skills</h3>
+    <ul>
+      <li>Skill one</li>
+      <li>Skill two</li>
+      <li>Skill three</li>
+      <li>Skill four</li>
+    </ul>
+  </div>
+  <div class="highlight-card">
+    <h3>Recent Project</h3>
+    <p class="card-meta">Category · Year</p>
+    <p>Short description of your most recent or most notable project.</p>
+    <a href="projects/index.qmd">View project →</a>
+  </div>
+  <div class="highlight-card">
+    <h3>Latest Post</h3>
+    <p class="card-meta">Topic · Year</p>
+    <p>Short description of your most recent blog post or piece of writing.</p>
+    <a href="blog/index.qmd">Read post →</a>
+  </div>
+</section>
+```

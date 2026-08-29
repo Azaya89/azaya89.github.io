@@ -1,0 +1,113 @@
+---
+title: "About"
+toc: false
+---
+
+## About Me
+
+Write a longer bio here — 3–5 sentences covering your background, what drives your work,
+and what you bring to a team. Be specific: tools you use, domains you work in, problems
+you like solving.
+
+---
+
+## Experience
+
+```{=html}
+<div class="timeline">
+
+  <div class="timeline-item">
+    <div class="timeline-meta">
+      <span class="timeline-date">Month Year – Present</span>
+      <span class="timeline-company">Company Name</span>
+    </div>
+    <div class="timeline-body">
+      <h4>Job Title</h4>
+      <p>
+        One to two sentences describing your responsibilities and impact. Use numbers
+        where possible (e.g., "reduced pipeline runtime by 40%").
+      </p>
+      <ul>
+        <li>Key achievement or responsibility</li>
+        <li>Key achievement or responsibility</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="timeline-item">
+    <div class="timeline-meta">
+      <span class="timeline-date">Month Year – Month Year</span>
+      <span class="timeline-company">Company Name</span>
+    </div>
+    <div class="timeline-body">
+      <h4>Job Title</h4>
+      <p>
+        One to two sentences describing your responsibilities and impact.
+      </p>
+      <ul>
+        <li>Key achievement or responsibility</li>
+        <li>Key achievement or responsibility</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="timeline-item">
+    <div class="timeline-meta">
+      <span class="timeline-date">Month Year – Month Year</span>
+      <span class="timeline-company">Company Name</span>
+    </div>
+    <div class="timeline-body">
+      <h4>Job Title</h4>
+      <p>
+        One to two sentences describing your responsibilities and impact.
+      </p>
+      <ul>
+        <li>Key achievement or responsibility</li>
+        <li>Key achievement or responsibility</li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+```
+
+---
+
+## Education
+
+```{=html}
+<div class="timeline">
+
+  <div class="timeline-item">
+    <div class="timeline-meta">
+      <span class="timeline-date">Year – Year</span>
+      <span class="timeline-company">University Name</span>
+    </div>
+    <div class="timeline-body">
+      <h4>Degree · Field of Study</h4>
+      <p>Optional: dissertation topic, honors, relevant coursework.</p>
+    </div>
+  </div>
+
+</div>
+```
+
+---
+
+## Skills
+
+| Category | Tools / Technologies |
+|---|---|
+| Languages | Python, SQL, [add yours] |
+| Data & Analysis | pandas, NumPy, [add yours] |
+| Visualization | Matplotlib, Bokeh, [add yours] |
+| Infrastructure | [add yours] |
+| Other | [add yours] |
+
+---
+
+## Contact
+
+- **Email:** [your@email.com](mailto:your@email.com)
+- **GitHub:** [github.com/azaya89](https://github.com/azaya89)
+- **LinkedIn:** [linkedin.com/in/your-profile](https://linkedin.com/in/your-profile)

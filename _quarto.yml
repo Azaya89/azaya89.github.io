@@ -1,0 +1,38 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Your Name"
+  description: "Data professional | [Your tagline here]"
+  favicon: assets/images/favicon.ico
+
+  navbar:
+    left:
+      - text: "Home"
+        href: index.qmd
+      - text: "About"
+        href: about.qmd
+      - text: "Projects"
+        href: projects/index.qmd
+      - text: "Blog"
+        href: blog/index.qmd
+    right:
+      - icon: github
+        href: https://github.com/azaya89
+        aria-label: GitHub
+      - icon: linkedin
+        href: https://linkedin.com/in/your-profile
+        aria-label: LinkedIn
+
+  page-footer:
+    center: "© 2026 Your Name · Built with [Quarto](https://quarto.org)"
+
+format:
+  html:
+    theme:
+      light: flatly
+      dark: darkly
+    css: assets/styles.css
+    smooth-scroll: true
+    toc: false
