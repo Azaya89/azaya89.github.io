@@ -4,56 +4,70 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "Write a longer bio here — 3–5 sentences covering your background, what drives your work, and what you bring to a team. Be specific: tools you use, domains you work in, problems you like solving."
+    "text": "I am a Python developer and data analyst with a growing focus on data science and machine learning. I currently work as a contractor with Anaconda, contributing to open-source Python projects with an emphasis on data analysis and visualization.\nI previously completed an Outreachy internship with the Bokeh team, where I recreated complex visualizations from Claus O. Wilke’s Fundamentals of Data Visualization, documenting my approach through technical blog posts and translating theory into practical, reproducible workflows.\nBefore transitioning into tech, I worked as a pharmacist for over seven years, managing clinical operations, inventory, and patient care. That background sharpened my analytical thinking and ability to solve real-world problems under pressure — skills I carry directly into data work."
   },
   {
     "objectID": "about.html#about-me",
     "href": "about.html#about-me",
     "title": "About",
     "section": "",
-    "text": "Write a longer bio here — 3–5 sentences covering your background, what drives your work, and what you bring to a team. Be specific: tools you use, domains you work in, problems you like solving."
+    "text": "I am a Python developer and data analyst with a growing focus on data science and machine learning. I currently work as a contractor with Anaconda, contributing to open-source Python projects with an emphasis on data analysis and visualization.\nI previously completed an Outreachy internship with the Bokeh team, where I recreated complex visualizations from Claus O. Wilke’s Fundamentals of Data Visualization, documenting my approach through technical blog posts and translating theory into practical, reproducible workflows.\nBefore transitioning into tech, I worked as a pharmacist for over seven years, managing clinical operations, inventory, and patient care. That background sharpened my analytical thinking and ability to solve real-world problems under pressure — skills I carry directly into data work."
   },
   {
     "objectID": "about.html#experience",
     "href": "about.html#experience",
     "title": "About",
     "section": "Experience",
-    "text": "Experience\n\n\n  \n    \n      Month Year – Present\n      Company Name\n    \n    \n      Job Title\n      \n        One to two sentences describing your responsibilities and impact. Use numbers\n        where possible (e.g., \"reduced pipeline runtime by 40%\").\n      \n      \n        Key achievement or responsibility\n        Key achievement or responsibility\n      \n    \n  \n\n  \n    \n      Month Year – Month Year\n      Company Name\n    \n    \n      Job Title\n      \n        One to two sentences describing your responsibilities and impact.\n      \n      \n        Key achievement or responsibility\n        Key achievement or responsibility\n      \n    \n  \n\n  \n    \n      Month Year – Month Year\n      Company Name\n    \n    \n      Job Title\n      \n        One to two sentences describing your responsibilities and impact.\n      \n      \n        Key achievement or responsibility\n        Key achievement or responsibility"
+    "text": "Experience\nOpen Source Python Developer · Anaconda, Inc. · Contract · Remote Sep 2024 – Present\n\nContributing to open-source Python projects with an emphasis on data analysis and visualization\nDeveloped agent skills and an evaluation framework to improve LLM-generated HoloViz code, supported by a NumFOCUS Small Development Grant\nBenchmarked common LLM failure modes (hallucinated APIs, outdated syntax, missing imports)\nTechnical writing and documentation across the HoloViz ecosystem\n\n\nPython Developer · HoloViz · Contract · Remote Jan 2024 – Aug 2024\n\nContributed to the HoloViz open-source ecosystem, focusing on data visualization tooling\nTechnical documentation and reproducible workflow examples\n\n\nProject Intern · Outreachy / Bokeh · Remote May 2023 – Aug 2023\n\nRecreated complex visualizations from Claus O. Wilke’s Fundamentals of Data Visualization using Bokeh\nDocumented each visualization with a technical blog post, making advanced techniques accessible and reproducible\n\n\nPharmacist · Evergreen Hernice Pharmacy · Port Harcourt, Nigeria Mar 2016 – May 2023\n\nManaged drug stock inventory and logistics to eliminate stock-outs and medication expiry\nCollaborated with staff to consistently improve sales outcomes\nDelivered patient-focused care with thorough counselling on drug adherence\n\n\nPharmacist · General Hospital, Gembu · Sardauna, Taraba State, Nigeria Oct 2015 – Mar 2016\n\nInitiated daily pharmacist clinical rotations that improved in-patient outcomes\nProvided HIV/AIDS adherence counselling, reducing PLWHA prevalence in the local government\nMonitored adverse drug reactions and managed HAART medication inventory"
   },
   {
     "objectID": "about.html#education",
     "href": "about.html#education",
     "title": "About",
     "section": "Education",
-    "text": "Education\n\n\n  \n    \n      Year – Year\n      University Name\n    \n    \n      Degree · Field of Study\n      Optional: dissertation topic, honors, relevant coursework."
+    "text": "Education\nMSc · Data Science · Northumbria University, Newcastle Jan 2026 – Jun 2027\nMachine learning algorithms, statistical analysis in R. Member of Northumbria University Chess Society.\n\nB.Pharm · Pharmacy · University of Nigeria, Nsukka 2007 – 2012"
+  },
+  {
+    "objectID": "about.html#certifications",
+    "href": "about.html#certifications",
+    "title": "About",
+    "section": "Certifications",
+    "text": "Certifications\n\nIntroduction to Programming Using Python — CS50, December 2023"
   },
   {
     "objectID": "about.html#skills",
     "href": "about.html#skills",
     "title": "About",
     "section": "Skills",
-    "text": "Skills\n\n\n\nCategory\nTools / Technologies\n\n\n\n\nLanguages\nPython, SQL, [add yours]\n\n\nData & Analysis\npandas, NumPy, [add yours]\n\n\nVisualization\nMatplotlib, Bokeh, [add yours]\n\n\nInfrastructure\n[add yours]\n\n\nOther\n[add yours]"
+    "text": "Skills\n\n\n\nCategory\nTools / Technologies\n\n\n\n\nLanguages\nPython, R, SQL\n\n\nData & Analysis\nPandas, NumPy, statistical modelling\n\n\nVisualization\nBokeh, hvPlot, Matplotlib\n\n\nML & Data Science\nMachine learning, scikit-learn\n\n\nOther\nTechnical writing, open-source contribution, Django"
+  },
+  {
+    "objectID": "about.html#languages",
+    "href": "about.html#languages",
+    "title": "About",
+    "section": "Languages",
+    "text": "Languages\nEnglish · Igbo"
   },
   {
     "objectID": "about.html#contact",
     "href": "about.html#contact",
     "title": "About",
     "section": "Contact",
-    "text": "Contact\n\nEmail: your@email.com\nGitHub: github.com/azaya89\nLinkedIn: linkedin.com/in/your-profile"
+    "text": "Contact\n\nEmail: akoritaisaiah@gmail.com\nGitHub: github.com/azaya89\nLinkedIn: linkedin.com/in/isaiah-akorita"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Your Name",
+    "title": "Isaiah Akorita",
     "section": "",
-    "text": "Hello, I'm\n    Your Name\n    Data professional · [Your role / specialty here]\n    \n      Brief 2–3 sentence bio goes here. Describe what you do, what you care about,\n      and what kind of work you're looking for. Keep it direct and specific.\n    \n    \n      About me\n      See my work\n    \n  \n\n\n\n  \n    Skills\n    \n      Skill one\n      Skill two\n      Skill three\n      Skill four\n    \n  \n  \n    Recent Project\n    Category · Year\n    Short description of your most recent or most notable project.\n    View project →\n  \n  \n    Latest Post\n    Topic · Year\n    Short description of your most recent blog post or piece of writing.\n    Read post →"
+    "text": "Isaiah Akorita\nData Analyst · Python Developer · Technical Writer\nI build data-driven projects using Python and R, with a focus on analysis, visualization, and open-source contribution. Currently contracting with Anaconda and pursuing an MSc in Data Science at Northumbria University.\nAbout me See my work\n\n\nSkills\n\nPython · R · SQL\nPandas · Bokeh · hvPlot\nMachine Learning\nTechnical Writing\n\n\n\nRecent Work\nOpen Source · 2024–Present\nContributing to open-source Python projects at Anaconda with a focus on data analysis, visualization, and LLM tooling for the HoloViz ecosystem.\nView projects →\n\n\nLatest Writing\nNumFOCUS SDG · 2025\nMid-project update on making HoloViz LLM-friendly — benchmarking failure modes, building agent skills, and measuring improvement.\nRead more →"
   },
   {
     "objectID": "projects/index.html",
     "href": "projects/index.html",
     "title": "Projects",
     "section": "",
-    "text": "A selection of work across data analysis, visualization, and engineering. Each project links to a write-up, GitHub repo, or live demo.\n\n\n  \n    \n      Project Title One\n      Python\n      Data Analysis\n    \n    \n      Two to three sentence description of the project. What problem did it solve?\n      What was your approach? What was the outcome?\n    \n    \n      GitHub →\n      Live demo →\n    \n  \n\n  \n    \n      Project Title Two\n      SQL\n      Dashboard\n    \n    \n      Two to three sentence description of the project. What problem did it solve?\n      What was your approach? What was the outcome?\n    \n    \n      GitHub →\n    \n  \n\n  \n    \n      Project Title Three\n      Machine Learning\n      Python\n    \n    \n      Two to three sentence description of the project. What problem did it solve?\n      What was your approach? What was the outcome?\n    \n    \n      GitHub →\n      Write-up →\n    \n  \n\n  \n    \n      Project Title Four\n      Visualization\n      Bokeh\n    \n    \n      Two to three sentence description of the project. What problem did it solve?\n      What was your approach? What was the outcome?\n    \n    \n      GitHub →"
+    "text": "A selection of work across data analysis, visualization, open-source contribution, and software development.\n\n\nHoloViz LLM Skills\nPython Open Source AI Tooling\nDeveloped reusable agent skills and an evaluation framework to improve the quality of LLM-generated code for the HoloViz ecosystem, funded by a NumFOCUS Small Development Grant. Benchmarked common failure modes including hallucinated APIs, outdated syntax, and missing imports.\nGitHub →\n\n\n\nFundamentals of Data Visualization (Bokeh)\nPython Bokeh Data Visualization\nRecreated complex visualizations from Claus O. Wilke’s Fundamentals of Data Visualization using the Bokeh library during an Outreachy internship. Each visualization was documented with a technical blog post covering the approach and workflow.\nGitHub →\n\n\n\nBlog App — Django\nPython Django Web Development\nA full-stack blog application built with Django and Bootstrap 4. Users can register, log in, publish topics, and write entries. Deployed on Heroku.\nGitHub →\n\n\n\nAlien Invasion — Pygame\nPython Pygame\nA classic side-scrolling shooter game built with Pygame. Aliens move across and down the screen, accelerating as levels progress. The player has three lives; the game ends when all ships are destroyed.\nGitHub →\n\n\n\nWikidata Author Name Identification\nPython Open Source Volunteering\nVolunteered on a Wikidata project to automatically identify first and last author names in academic paper citations, improving citation accuracy across Wikicite and Wikimedia.\nGitHub →"
   },
   {
     "objectID": "blog/index.html",
