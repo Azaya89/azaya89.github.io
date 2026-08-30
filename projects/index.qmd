@@ -1,6 +1,5 @@
 ---
 title: "Projects"
-toc: false
 ---
 
 A selection of work across data analysis, visualization, open-source contribution, and software development.

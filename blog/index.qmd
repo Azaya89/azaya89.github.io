@@ -1,6 +1,5 @@
 ---
 title: "Blog"
-toc: false
 listing:
   contents: posts
   sort: "date desc"

@@ -1,12 +1,10 @@
 ---
-title: ""
-page-layout: full
-toc: false
+title: "Home"
 ---
 
 # Isaiah Akorita
 
-**Data Analyst · Python Developer · Technical Writer**
+*Data Analyst · Python Developer · Technical Writer*
 
 I build data-driven projects using Python and R, with a focus on analysis, visualization,
 and open-source contribution. Currently contracting with Anaconda and pursuing an MSc in
@@ -23,7 +21,7 @@ Data Science at Northumbria University.
 - Technical Writing
 
 ### Recent Work
-**Open Source · 2024–Present**
+*Open Source · 2024–Present*
 
 Contributing to open-source Python projects at Anaconda with a focus on data analysis,
 visualization, and LLM tooling for the HoloViz ecosystem.
@@ -31,7 +29,7 @@ visualization, and LLM tooling for the HoloViz ecosystem.
 [View projects →](projects/index.qmd)
 
 ### Latest Writing
-**NumFOCUS SDG · 2025**
+*NumFOCUS SDG · 2025*
 
 Mid-project update on making HoloViz LLM-friendly — benchmarking failure modes,
 building agent skills, and measuring improvement.
