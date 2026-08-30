@@ -276,8 +276,8 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../blog/index.html"> 
-<span class="menu-text">Blog</span></a>
+    <a class="nav-link" href="../blogs/index.html"> 
+<span class="menu-text">Blogs</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
@@ -335,8 +335,8 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../blog/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Blog</span></a>
+  <a href="../blogs/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Blogs</span></a>
   </div>
 </li>
     </ul>
@@ -350,10 +350,9 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#holoviz-llm-skills" id="toc-holoviz-llm-skills" class="nav-link active" data-scroll-target="#holoviz-llm-skills">HoloViz LLM Skills</a></li>
+  <li><a href="#hvplot-documentation-website" id="toc-hvplot-documentation-website" class="nav-link" data-scroll-target="#hvplot-documentation-website">hvPlot Documentation Website</a></li>
+  <li><a href="#holoviz-website-examples" id="toc-holoviz-website-examples" class="nav-link" data-scroll-target="#holoviz-website-examples">HoloViz Website Examples</a></li>
   <li><a href="#fundamentals-of-data-visualization-bokeh" id="toc-fundamentals-of-data-visualization-bokeh" class="nav-link" data-scroll-target="#fundamentals-of-data-visualization-bokeh">Fundamentals of Data Visualization (Bokeh)</a></li>
-  <li><a href="#blog-app-django" id="toc-blog-app-django" class="nav-link" data-scroll-target="#blog-app-django">Blog App — Django</a></li>
-  <li><a href="#alien-invasion-pygame" id="toc-alien-invasion-pygame" class="nav-link" data-scroll-target="#alien-invasion-pygame">Alien Invasion — Pygame</a></li>
-  <li><a href="#wikidata-author-name-identification" id="toc-wikidata-author-name-identification" class="nav-link" data-scroll-target="#wikidata-author-name-identification">Wikidata Author Name Identification</a></li>
   </ul>
 </nav>
     </div>
@@ -386,35 +385,46 @@ ul.task-list li input[type="checkbox"] {
 <h3 class="anchored" data-anchor-id="holoviz-llm-skills">HoloViz LLM Skills</h3>
 <p><code>Python</code> <code>Open Source</code> <code>AI Tooling</code></p>
 <p>Developed reusable agent skills and an evaluation framework to improve the quality of LLM-generated code for the HoloViz ecosystem, funded by a NumFOCUS Small Development Grant. Benchmarked common failure modes including hallucinated APIs, outdated syntax, and missing imports.</p>
-<p><a href="https://github.com/holoviz-topics/holoviz-skills">GitHub →</a></p>
+<p><a href="https://github.com/holoviz-topics/holoviz-skills">GitHub →</a> <a href="https://holoviz-dev.github.io/holoviz-skills/">Project Website →</a></p>
+<p><a href="https://blog.holoviz.org/posts/holoviz_llm/">Mid-project Blog Post</a></p>
+<hr>
+</section>
+<section id="hvplot-documentation-website" class="level3">
+<h3 class="anchored" data-anchor-id="hvplot-documentation-website">hvPlot Documentation Website</h3>
+<p><code>Python</code> <code>Open Source</code> <code>Docs</code></p>
+<p>Spearheaded a complete redesign of the hvPlot documentation website, implementing the <a href="https://diataxis.fr">Diátaxis framework</a> to restructure content around user needs — funded by a NumFOCUS Small Development Grant.</p>
+<p>Built four new content pillars:</p>
+<p><strong>Tutorials</strong> for learning-oriented flow,</p>
+<p><strong>How-To Guides</strong> for problem-solving,</p>
+<p><strong>Explanation</strong> for conceptual depth, and</p>
+<p>A comprehensive <strong>API Reference</strong> auto-generated from source docstrings.</p>
+<p>Integrated the new <a href="https://github.com/holoviz/hvsampledata"><code>hvsampledata</code></a> package to provide reproducible, real-world datasets across all examples.</p>
+<p>The overhaul reduced onboarding friction and unified the documentation experience across the HoloViz ecosystem.</p>
+<p align="center">
+<img src="../assets/images/old_gallery.png" class="img-fluid" alt="Former Gallery"> <br> <strong>Old Gallery</strong>
+</p>
+<p align="center">
+<img src="../assets/images/new_gallery.png" class="img-fluid" alt="Current Gallery"> <br> <strong>New Gallery</strong>
+</p>
+<p><a href="https://github.com/orgs/holoviz/projects/23">GitHub Project Board →</a></p>
+<p><a href="https://web.archive.org/web/20230927081921/https://hvplot.holoviz.org/index.html">View full website evolution on Wayback Machine</a></p>
+<hr>
+</section>
+<section id="holoviz-website-examples" class="level3">
+<h3 class="anchored" data-anchor-id="holoviz-website-examples">HoloViz Website Examples</h3>
+<p><code>Python</code> <code>Open Source</code> <code>Docs</code></p>
+<p>Revitalized the HoloViz Examples Gallery — the primary showcase for the entire HoloViz ecosystem — by modernizing 10 examples to current APIs and introducing new categories that demonstrate cross-library integration (Panel + hvPlot + HoloViews).</p>
+<p>Updated nine legacy examples and authored one brand-new end-to-end dashboard example, ensuring every gallery entry is runnable, documented, and demonstrates best practices. This work directly supports user onboarding and library adoption by providing production-ready reference implementations.</p>
+<p><a href="https://github.com/holoviz-topics/examples/pulls?q=sort%3Aupdated-desc+is%3Apr+is%3Amerged+label%3A%22NF+SDG%22">GitHub →</a></p>
+<p><a href="https://holoviz-dev.github.io/examples/gallery/index.html">Example Website →</a></p>
 <hr>
 </section>
 <section id="fundamentals-of-data-visualization-bokeh" class="level3">
 <h3 class="anchored" data-anchor-id="fundamentals-of-data-visualization-bokeh">Fundamentals of Data Visualization (Bokeh)</h3>
 <p><code>Python</code> <code>Bokeh</code> <code>Data Visualization</code></p>
 <p>Recreated complex visualizations from Claus O. Wilke’s <em>Fundamentals of Data Visualization</em> using the Bokeh library during an Outreachy internship. Each visualization was documented with a technical blog post covering the approach and workflow.</p>
-<p><a href="https://github.com/Azaya89">GitHub →</a></p>
-<hr>
-</section>
-<section id="blog-app-django" class="level3">
-<h3 class="anchored" data-anchor-id="blog-app-django">Blog App — Django</h3>
-<p><code>Python</code> <code>Django</code> <code>Web Development</code></p>
-<p>A full-stack blog application built with Django and Bootstrap 4. Users can register, log in, publish topics, and write entries. Deployed on Heroku.</p>
-<p><a href="https://github.com/Azaya89">GitHub →</a></p>
-<hr>
-</section>
-<section id="alien-invasion-pygame" class="level3">
-<h3 class="anchored" data-anchor-id="alien-invasion-pygame">Alien Invasion — Pygame</h3>
-<p><code>Python</code> <code>Pygame</code></p>
-<p>A classic side-scrolling shooter game built with Pygame. Aliens move across and down the screen, accelerating as levels progress. The player has three lives; the game ends when all ships are destroyed.</p>
-<p><a href="https://github.com/Azaya89">GitHub →</a></p>
-<hr>
-</section>
-<section id="wikidata-author-name-identification" class="level3">
-<h3 class="anchored" data-anchor-id="wikidata-author-name-identification">Wikidata Author Name Identification</h3>
-<p><code>Python</code> <code>Open Source</code> <code>Volunteering</code></p>
-<p>Volunteered on a Wikidata project to automatically identify first and last author names in academic paper citations, improving citation accuracy across Wikicite and Wikimedia.</p>
-<p><a href="https://github.com/Azaya89/Outreachy-Wikidata-project">GitHub →</a></p>
+<p><a href="https://github.com/bokeh/dataviz-fundamentals">GitHub →</a></p>
+<p><a href="https://bokeh.github.io/dataviz-fundamentals/">Project Website →</a></p>
 
 
 </section>

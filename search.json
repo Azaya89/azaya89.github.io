@@ -37,7 +37,7 @@
     "href": "about.html#education",
     "title": "About",
     "section": "Education",
-    "text": "Education\nMSc · Data Science · Northumbria University, Newcastle Jan 2026 – Jun 2027\nMachine learning algorithms, statistical analysis in R. Member of Northumbria University Chess Society.\n\nB.Pharm · Pharmacy · University of Nigeria, Nsukka 2007 – 2012",
+    "text": "Education\nMSc · Data Science · Northumbria University, Newcastle Jan 2026 – Jun 2027\n\nMachine learning algorithms, statistical analysis in Python and R.\nPioneer President of the Northumbria University Big Data and Data Science Society.\nMember of Northumbria University Chess Society.\n\n\nB.Pharm · Pharmacy · University of Nigeria, Nsukka 2007 – 2012",
     "crumbs": [
       "Home",
       "About"
@@ -88,28 +88,39 @@
     ]
   },
   {
-    "objectID": "blog/posts/holoviz-skills/index.html",
-    "href": "blog/posts/holoviz-skills/index.html",
-    "title": "Holoviz Skills",
-    "section": "",
-    "text": "It was awesome!"
-  },
-  {
-    "objectID": "blog/posts/holoviz-skills/index.html#final-conclusion",
-    "href": "blog/posts/holoviz-skills/index.html#final-conclusion",
-    "title": "Holoviz Skills",
-    "section": "",
-    "text": "It was awesome!"
-  },
-  {
     "objectID": "projects/index.html",
     "href": "projects/index.html",
     "title": "Projects",
     "section": "",
-    "text": "A selection of work across data analysis, visualization, open-source contribution, and software development.\n\n\nHoloViz LLM Skills\nPython Open Source AI Tooling\nDeveloped reusable agent skills and an evaluation framework to improve the quality of LLM-generated code for the HoloViz ecosystem, funded by a NumFOCUS Small Development Grant. Benchmarked common failure modes including hallucinated APIs, outdated syntax, and missing imports.\nGitHub →\n\n\n\nFundamentals of Data Visualization (Bokeh)\nPython Bokeh Data Visualization\nRecreated complex visualizations from Claus O. Wilke’s Fundamentals of Data Visualization using the Bokeh library during an Outreachy internship. Each visualization was documented with a technical blog post covering the approach and workflow.\nGitHub →\n\n\n\nBlog App — Django\nPython Django Web Development\nA full-stack blog application built with Django and Bootstrap 4. Users can register, log in, publish topics, and write entries. Deployed on Heroku.\nGitHub →\n\n\n\nAlien Invasion — Pygame\nPython Pygame\nA classic side-scrolling shooter game built with Pygame. Aliens move across and down the screen, accelerating as levels progress. The player has three lives; the game ends when all ships are destroyed.\nGitHub →\n\n\n\nWikidata Author Name Identification\nPython Open Source Volunteering\nVolunteered on a Wikidata project to automatically identify first and last author names in academic paper citations, improving citation accuracy across Wikicite and Wikimedia.\nGitHub →",
+    "text": "A selection of work across data analysis, visualization, open-source contribution, and software development.\n\n\nHoloViz LLM Skills\nPython Open Source AI Tooling\nDeveloped reusable agent skills and an evaluation framework to improve the quality of LLM-generated code for the HoloViz ecosystem, funded by a NumFOCUS Small Development Grant. Benchmarked common failure modes including hallucinated APIs, outdated syntax, and missing imports.\nGitHub → Project Website →\nMid-project Blog Post\n\n\n\nhvPlot Documentation Website\nPython Open Source Docs\nSpearheaded a complete redesign of the hvPlot documentation website, implementing the Diátaxis framework to restructure content around user needs — funded by a NumFOCUS Small Development Grant.\nBuilt four new content pillars:\nTutorials for learning-oriented flow,\nHow-To Guides for problem-solving,\nExplanation for conceptual depth, and\nA comprehensive API Reference auto-generated from source docstrings.\nIntegrated the new hvsampledata package to provide reproducible, real-world datasets across all examples.\nThe overhaul reduced onboarding friction and unified the documentation experience across the HoloViz ecosystem.\n\n  Old Gallery\n\n\n  New Gallery\n\nGitHub Project Board →\nView full website evolution on Wayback Machine\n\n\n\nHoloViz Website Examples\nPython Open Source Docs\nRevitalized the HoloViz Examples Gallery — the primary showcase for the entire HoloViz ecosystem — by modernizing 10 examples to current APIs and introducing new categories that demonstrate cross-library integration (Panel + hvPlot + HoloViews).\nUpdated nine legacy examples and authored one brand-new end-to-end dashboard example, ensuring every gallery entry is runnable, documented, and demonstrates best practices. This work directly supports user onboarding and library adoption by providing production-ready reference implementations.\nGitHub →\nExample Website →\n\n\n\nFundamentals of Data Visualization (Bokeh)\nPython Bokeh Data Visualization\nRecreated complex visualizations from Claus O. Wilke’s Fundamentals of Data Visualization using the Bokeh library during an Outreachy internship. Each visualization was documented with a technical blog post covering the approach and workflow.\nGitHub →\nProject Website →",
     "crumbs": [
       "Home",
       "Projects"
+    ]
+  },
+  {
+    "objectID": "blogs/posts/Data-Viz Fundamentals/index.html",
+    "href": "blogs/posts/Data-Viz Fundamentals/index.html",
+    "title": "Fundamentals of Data Visualization",
+    "section": "",
+    "text": "This blog post served as an introduction to the internship project on using Bokeh to recreate the plots from the book, Fundamentals of Data Visualization by Claus O. Wilke. You can read the full post on Medium."
+  },
+  {
+    "objectID": "blogs/posts/Data-Viz Fundamentals/index.html#fundamentals-of-data-visualization-using-bokeh",
+    "href": "blogs/posts/Data-Viz Fundamentals/index.html#fundamentals-of-data-visualization-using-bokeh",
+    "title": "Fundamentals of Data Visualization",
+    "section": "",
+    "text": "This blog post served as an introduction to the internship project on using Bokeh to recreate the plots from the book, Fundamentals of Data Visualization by Claus O. Wilke. You can read the full post on Medium."
+  },
+  {
+    "objectID": "blogs/index.html",
+    "href": "blogs/index.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Technical writing on data, code, and tools.\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nDate\n\n\n\nTitle\n\n\n\nDescription\n\n\n\n\n\n\n\n\n2023-06-09\n\n\nFundamentals of Data Visualization\n\n\nIntroductory blog post on the Bokeh Data Visualization internship project\n\n\n\n\n\n\nNo matching items",
+    "crumbs": [
+      "Home",
+      "Blogs"
     ]
   },
   {
@@ -120,17 +131,6 @@
     "text": "Isaiah Akorita\nData Analyst · Python Developer · Technical Writer\nI build data-driven projects using Python and R, with a focus on analysis, visualization, and open-source contribution. Currently contracting with Anaconda and pursuing an MSc in Data Science at Northumbria University.\nAbout me See my work\n\n\nSkills\n\nPython · R · SQL\nPandas · Bokeh · hvPlot\nMachine Learning\nTechnical Writing\n\n\n\nRecent Work\nOpen Source · 2024–Present\nContributing to open-source Python projects at Anaconda with a focus on data analysis, visualization, and LLM tooling for the HoloViz ecosystem.\nView projects →\n\n\nLatest Writing\nNumFOCUS SDG · 2025\nMid-project update on making HoloViz LLM-friendly — benchmarking failure modes, building agent skills, and measuring improvement.\nRead more →",
     "crumbs": [
       "Home"
-    ]
-  },
-  {
-    "objectID": "blog/index.html",
-    "href": "blog/index.html",
-    "title": "Blog",
-    "section": "",
-    "text": "Technical writing on data, code, and tools.\n\n\n\n\n\n\nPosts coming soon. Check back later, or follow on GitHub.\n\n\n\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nDate\n\n\n\nTitle\n\n\n\nDescription\n\n\n\n\n\n\n\n\n2026-08-30\n\n\nHoloviz Skills\n\n\nWe made skills folder\n\n\n\n\n\n\nNo matching items",
-    "crumbs": [
-      "Home",
-      "Blog"
     ]
   }
 ]

@@ -1,8 +1,8 @@
 [
   {
-    "listing": "/blog/index.html",
+    "listing": "/blogs/index.html",
     "items": [
-      "/blog/posts/holoviz-skills/index.html"
+      "/blogs/posts/Data-Viz Fundamentals/index.html"
     ]
   }
 ]

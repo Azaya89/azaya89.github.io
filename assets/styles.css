@@ -116,6 +116,33 @@ h3 ~ p > a {
   margin-right: 1rem;
 }
 
+/* --- Former/current website comparison --- */
+.comparison-container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+.comparison-container img {
+  max-width: 45%;
+  height: auto;
+  border: 1px solid var(--bs-border-color);
+  border-radius: 4px;
+}
+.comparison-caption {
+  font-style: italic;
+  color: #666;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+.wayback-link {
+  display: inline-block;
+  margin-top: 1rem;
+  font-size: 0.875rem;
+  color: var(--bs-primary);
+  text-decoration: underline;
+}
+
 /* --- Sidebar ----------------------------------------------- */
 #quarto-sidebar .sidebar-item {
   padding: 0.6rem 0;
