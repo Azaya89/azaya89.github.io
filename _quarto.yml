@@ -15,8 +15,8 @@ website:
         href: about.qmd
       - text: "Projects"
         href: projects/index.qmd
-      - text: "Blog"
-        href: blog/index.qmd
+      - text: "Blogs"
+        href: blogs/index.qmd
     right:
       - icon: github
         href: https://github.com/azaya89
@@ -34,8 +34,8 @@ website:
         href: about.qmd
       - text: "Projects"
         href: projects/index.qmd
-      - text: "Blog"
-        href: blog/index.qmd
+      - text: "Blogs"
+        href: blogs/index.qmd
 
   page-footer:
     center: "© 2026 Isaiah Akorita · Built with [Quarto](https://quarto.org)"

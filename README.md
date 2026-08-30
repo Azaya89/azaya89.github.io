@@ -11,8 +11,8 @@ azaya89.github.io/
 ├── about.qmd            # Work history, skills, contact
 ├── projects/
 │   └── index.qmd        # Project showcase
-├── blog/
-│   └── index.qmd        # Blog listing
+├── blogs/
+│   └── index.qmd        # Blog listings
 │   └── posts/           # Add individual posts here
 ├── assets/
 │   ├── styles.css       # Custom CSS
@@ -43,7 +43,7 @@ GitHub Pages is configured to serve from that branch.
 
 ## Adding a blog post
 
-1. Create a folder under `blog/posts/your-post-slug/`
+1. Create a folder under `blogs/posts/your-post-slug/`
 2. Add an `index.qmd` with YAML front matter:
 
 ```yaml

@@ -34,4 +34,4 @@ visualization, and LLM tooling for the HoloViz ecosystem.
 Mid-project update on making HoloViz LLM-friendly — benchmarking failure modes,
 building agent skills, and measuring improvement.
 
-[Read more →](blog/index.qmd)
+[Read more →](https://blog.holoviz.org/posts/holoviz_llm/)

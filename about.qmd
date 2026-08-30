@@ -69,7 +69,9 @@ ability to solve real-world problems under pressure — skills I carry directly 
 **MSc · Data Science · Northumbria University, Newcastle**
 *Jan 2026 – Jun 2027*
 
-Machine learning algorithms, statistical analysis in R. Member of Northumbria University Chess Society.
+- Machine learning algorithms, statistical analysis in Python and R.
+- Pioneer President of the Northumbria University Big Data and Data Science Society.
+- Member of Northumbria University Chess Society.
 
 ---
 

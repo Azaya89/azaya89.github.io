@@ -1,0 +1,15 @@
+---
+title: "Fundamentals of Data Visualization"
+date: 2023-06-09
+description: "Introductory blog post on the Bokeh Data Visualization internship project"
+---
+
+## Fundamentals of data visualization using Bokeh
+
+<p align="center">
+![](../../../assets/images/bokeh-data-viz.webp)
+</p>
+
+This blog post served as an introduction to the internship project on using Bokeh to recreate the plots from the book, *Fundamentals of Data Visualization by Claus O. Wilke.*
+You can read the full post on [Medium.](https://medium.com/bokeh/fundamentals-of-data-visualization-with-bokeh-ee1e45b3135a)
+

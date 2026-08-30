@@ -9,7 +9,3 @@ listing:
 ---
 
 Technical writing on data, code, and tools.
-
-::: {.callout-note appearance="minimal"}
-Posts coming soon. Check back later, or [follow on GitHub](https://github.com/azaya89).
-:::

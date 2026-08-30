@@ -14,6 +14,59 @@ LLM-generated code for the HoloViz ecosystem, funded by a NumFOCUS Small Develop
 Benchmarked common failure modes including hallucinated APIs, outdated syntax, and missing imports.
 
 [GitHub →](https://github.com/holoviz-topics/holoviz-skills)
+[Project Website →](https://holoviz-dev.github.io/holoviz-skills/)
+
+[Mid-project Blog Post](https://blog.holoviz.org/posts/holoviz_llm/)
+
+---
+
+### hvPlot Documentation Website
+`Python` `Open Source` `Docs`
+
+Spearheaded a complete redesign of the hvPlot documentation website, implementing the [Diátaxis framework](https://diataxis.fr) to restructure content around user needs — funded by a NumFOCUS Small Development Grant.
+
+Built four new content pillars: 
+
+**Tutorials** for learning-oriented flow, 
+
+**How-To Guides** for problem-solving, 
+
+**Explanation** for conceptual depth, and 
+
+A comprehensive **API Reference** auto-generated from source docstrings.
+
+Integrated the new [`hvsampledata`](https://github.com/holoviz/hvsampledata) package to provide reproducible, real-world datasets across all examples.
+
+The overhaul reduced onboarding friction and unified the documentation experience across the HoloViz ecosystem.
+
+<p align="center">
+![Former Gallery](../assets/images/old_gallery.png)
+<br>
+**Old Gallery**
+</p>
+
+<p align="center">
+![Current Gallery](../assets/images/new_gallery.png)
+<br>
+**New Gallery**
+</p>
+
+[GitHub Project Board →](https://github.com/orgs/holoviz/projects/23)
+
+[View full website evolution on Wayback Machine](https://web.archive.org/web/20230927081921/https://hvplot.holoviz.org/index.html)
+
+---
+
+### HoloViz Website Examples
+`Python` `Open Source` `Docs`
+
+Revitalized the HoloViz Examples Gallery — the primary showcase for the entire HoloViz ecosystem — by modernizing 10 examples to current APIs and introducing new categories that demonstrate cross-library integration (Panel + hvPlot + HoloViews).
+
+Updated nine legacy examples and authored one brand-new end-to-end dashboard example, ensuring every gallery entry is runnable, documented, and demonstrates best practices. This work directly supports user onboarding and library adoption by providing production-ready reference implementations.
+
+[GitHub →](https://github.com/holoviz-topics/examples/pulls?q=sort%3Aupdated-desc+is%3Apr+is%3Amerged+label%3A%22NF+SDG%22)
+
+[Example Website →](https://holoviz-dev.github.io/examples/gallery/index.html)
 
 ---
 
@@ -24,35 +77,6 @@ Recreated complex visualizations from Claus O. Wilke's *Fundamentals of Data Vis
 using the Bokeh library during an Outreachy internship. Each visualization was documented
 with a technical blog post covering the approach and workflow.
 
-[GitHub →](https://github.com/Azaya89)
+[GitHub →](https://github.com/bokeh/dataviz-fundamentals)
 
----
-
-### Blog App — Django
-`Python` `Django` `Web Development`
-
-A full-stack blog application built with Django and Bootstrap 4. Users can register,
-log in, publish topics, and write entries. Deployed on Heroku.
-
-[GitHub →](https://github.com/Azaya89)
-
----
-
-### Alien Invasion — Pygame
-`Python` `Pygame`
-
-A classic side-scrolling shooter game built with Pygame. Aliens move across and down
-the screen, accelerating as levels progress. The player has three lives; the game ends
-when all ships are destroyed.
-
-[GitHub →](https://github.com/Azaya89)
-
----
-
-### Wikidata Author Name Identification
-`Python` `Open Source` `Volunteering`
-
-Volunteered on a Wikidata project to automatically identify first and last author names
-in academic paper citations, improving citation accuracy across Wikicite and Wikimedia.
-
-[GitHub →](https://github.com/Azaya89/Outreachy-Wikidata-project)
+[Project Website →](https://bokeh.github.io/dataviz-fundamentals/)
