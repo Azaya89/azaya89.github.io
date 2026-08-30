@@ -8,8 +8,8 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     permissions:
-      contents: read
-      packages: read
+      contents: write
+      pages: write
     steps:
       - name: Checkout repository
         uses: actions/checkout@v7
@@ -17,11 +17,9 @@ jobs:
       - name: Install Quarto
         uses: quarto-dev/quarto-actions/setup@v2
 
-      - name: Render website
-        run: quarto render
-
-      - name: Configure git identity
-        run: git config user.name "Azaya89" && git config user.email "akoritaisaiah@gmail.com"
-
-      - name: Publish to GitHub Pages
-        run: quarto publish gh-pages
+      - name: Publish to GitHub Pages (and render)
+        uses: quarto-dev/quarto-actions/publish@v2
+        with:
+          target: gh-pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
