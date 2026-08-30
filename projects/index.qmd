@@ -42,16 +42,18 @@ The overhaul reduced onboarding friction and unified the documentation experienc
 <p align="center">
 ![Former Gallery](../assets/images/old_gallery.png)
 <br>
-**Old Gallery**
+Old Gallery
 </p>
 
 <p align="center">
 ![Current Gallery](../assets/images/new_gallery.png)
 <br>
-**New Gallery**
+New Gallery
 </p>
 
 [GitHub Project Board →](https://github.com/orgs/holoviz/projects/23)
+
+[Release Blog Post](https://blog.holoviz.org/posts/hvplot_release_0.12/#major-expansion-and-improvement-of-the-reference-documentation)
 
 [View full website evolution on Wayback Machine](https://web.archive.org/web/20230927081921/https://hvplot.holoviz.org/index.html)
 
@@ -60,9 +62,15 @@ The overhaul reduced onboarding friction and unified the documentation experienc
 ### HoloViz Website Examples
 `Python` `Open Source` `Docs`
 
+<p align="center">
+![](../assets/images/world_cup.png)
+<br>
+World Cup example dashboard
+</p>
+
 Revitalized the HoloViz Examples Gallery — the primary showcase for the entire HoloViz ecosystem — by modernizing 10 examples to current APIs and introducing new categories that demonstrate cross-library integration (Panel + hvPlot + HoloViews).
 
-Updated nine legacy examples and authored one brand-new end-to-end dashboard example, ensuring every gallery entry is runnable, documented, and demonstrates best practices. This work directly supports user onboarding and library adoption by providing production-ready reference implementations.
+Updated nine legacy examples and authored one brand-new end-to-end World Cup dashboard example, ensuring every gallery entry is runnable, documented, and demonstrates best practices. This work directly supports user onboarding and library adoption by providing production-ready reference implementations.
 
 [GitHub →](https://github.com/holoviz-topics/examples/pulls?q=sort%3Aupdated-desc+is%3Apr+is%3Amerged+label%3A%22NF+SDG%22)
 
@@ -72,6 +80,10 @@ Updated nine legacy examples and authored one brand-new end-to-end dashboard exa
 
 ### Fundamentals of Data Visualization (Bokeh)
 `Python` `Bokeh` `Data Visualization`
+
+<p align="center">
+![](../assets/images/bokeh-data-viz.webp)
+</p>
 
 Recreated complex visualizations from Claus O. Wilke's *Fundamentals of Data Visualization*
 using the Bokeh library during an Outreachy internship. Each visualization was documented
