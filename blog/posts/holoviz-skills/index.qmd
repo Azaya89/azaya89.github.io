@@ -1,0 +1,7 @@
+---
+title: "Holoviz Skills"
+date: 2026-08-30
+description: "We made skills folder"
+---
+
+It was awesome!

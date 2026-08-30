@@ -6,7 +6,7 @@ listing:
   sort: "date desc"
   type: table
   fields: [date, title, description]
-  date-format: "MMMM D, YYYY"
+  date-format: "YYYY-MM-DD"
 ---
 
 Technical writing on data, code, and tools.
